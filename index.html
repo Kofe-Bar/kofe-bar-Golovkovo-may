@@ -276,3 +276,144 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайная карта | Кафе-бар</title>
+    <style>
+        :root { --tea-green: #606c38; --tea-black: #283618; --elite-gold: #bc6c25; --bg: #fdfdfb; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: var(--bg); margin: 0; padding-bottom: 100px; color: #333; }
+        header { background: var(--tea-black); color: #fefae0; text-align: center; padding: 2rem 1rem; border-bottom: 5px solid var(--elite-gold); }
+        .container { max-width: 650px; margin: 10px auto; padding: 0 10px; }
+        
+        .price-box { display: flex; justify-content: space-around; background: #fff; border: 2px solid var(--tea-green); border-radius: 15px; padding: 15px; margin: 20px 0; font-weight: bold; }
+        .price-tag { text-align: center; font-size: 0.9rem; }
+        .price-tag span { display: block; color: var(--elite-gold); font-size: 1.2rem; }
+
+        .cat-title { text-align: center; color: var(--tea-black); text-transform: uppercase; margin: 35px 0 15px; font-weight: 900; font-size: 1.2rem; letter-spacing: 1px; }
+        
+        .card { background: white; border-radius: 12px; padding: 15px; margin-bottom: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid var(--tea-green); }
+        .card.black { border-left-color: #5d4037; }
+        .card.elite { border-left-color: #d62828; background: #fff9f9; }
+        
+        .card-header { display: flex; justify-content: space-between; align-items: center; }
+        .name { font-weight: bold; font-size: 1.1rem; }
+        .card-price { font-weight: 900; color: var(--elite-gold); }
+        .desc { font-size: 0.85rem; color: #666; margin-top: 6px; line-height: 1.4; font-style: italic; }
+
+        .addons { background: #f1f3f1; border-radius: 12px; padding: 15px; margin-top: 25px; border: 1px solid #e0e0e0; text-align: center; }
+        .addons-title { font-weight: bold; text-transform: uppercase; font-size: 0.8rem; color: var(--tea-black); margin-bottom: 5px; }
+        .btn-order { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #25D366; color: white; width: 90%; max-width: 400px; padding: 16px; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.2); z-index: 1000; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ЧАЙНАЯ КАРТА</h1>
+    <p>От классики до элитных фруктовых купажей</p>
+</header>
+
+<div class="container">
+
+    <!-- ОБЩИЕ ЦЕНЫ -->
+    <div class="price-box">
+        <div class="price-tag">0.2 л <span>69 ₽</span></div>
+        <div class="price-tag">0.3 л <span>99 ₽</span></div>
+        <div class="price-tag">0.4 л <span>129 ₽</span></div>
+    </div>
+
+    <!-- ЭЛИТНЫЕ ЧАИ -->
+    <div class="cat-title">✨ ЭЛИТНЫЕ ЧАИ — 149 ₽</div>
+    
+    <div class="card elite">
+        <div class="card-header"><span class="name">Манго-Маракуйя</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Экзотический купаж с кусочками тропических фруктов и ярким ароматом.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Клюква-Апельсин</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Витаминный микс с северной клюквой и сочной цедрой апельсина.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Облепиха-Апельсин</span><span class="price-val">149 ₽</span></div>
+        <div class="desc">Согревающий солнечный чай с мягким ягодным вкусом и пользой облепихи.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Смородина-Малина</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Душистое сочетание садовых ягод, напоминающее о летнем утре.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Брусника-Каркаде</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Насыщенный рубиновый настой с приятной терпкостью брусники.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Имбирь-Лимон</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Мощный заряд энергии: острота имбиря и свежесть лимона.</div>
+    </div>
+    <div class="card elite">
+        <div class="card-header"><span class="name">Матча Латте 🍵</span><span class="card-price">149 ₽</span></div>
+        <div class="desc">Тонизирующий японский порошковый чай с нежной молочной пенкой.</div>
+    </div>
+
+    <!-- ЗЕЛЕНЫЕ ЧАИ -->
+    <div class="cat-title">🌿 ЗЕЛЕНЫЕ И ТРАВЯНЫЕ</div>
+    
+    <div class="card">
+        <div class="name">Зеленый имбирь и мелисса</div>
+        <div class="desc">Успокаивающая мелисса с легкой пряной ноткой имбиря.</div>
+    </div>
+    <div class="card">
+        <div class="name">Сенча, Ганпаудер и Те Гуа Инь</div>
+        <div class="desc">Купаж элитных зеленых сортов: свежесть и цветочное послевкусие.</div>
+    </div>
+    <div class="card">
+        <div class="name">Ромашка, Цедра апельсина, Корица и Имбирь</div>
+        <div class="desc">Мягкий цветочный чай с согревающими зимними специями.</div>
+    </div>
+    <div class="card">
+        <div class="name">Шалфей, Смородина, Гибискус и Саган Дайля</div>
+        <div class="desc">Таежный сбор для бодрости духа и крепкого здоровья.</div>
+    </div>
+    <div class="card">
+        <div class="name">Иван-чай с ромашкой, корицей и цедрой</div>
+        <div class="desc">Традиционный русский напиток в новом ароматном исполнении.</div>
+    </div>
+
+    <!-- ЧЕРНЫЕ ЧАИ -->
+    <div class="cat-title">🍂 ЧЕРНЫЕ И НАСЫЩЕННЫЕ</div>
+
+    <div class="card black">
+        <div class="name">Дарджилинг, Цейлон и Да Хун Пао</div>
+        <div class="desc">Крепкий черный купаж с терпким вкусом и глубоким ароматом.</div>
+    </div>
+    <div class="card black">
+        <div class="name">Смородина и Чабрец</div>
+        <div class="desc">Классический черный чай с душистым чабрецом и лесной ягодой.</div>
+    </div>
+    <div class="card black">
+        <div class="name">Бергамот и Лаванда</div>
+        <div class="desc">Аристократичный вкус бергамота с нежным успокаивающим шлейфом лаванды.</div>
+    </div>
+    <div class="card black">
+        <div class="name">Ромашка, Черный чай, Гинкго Билоба и Розмарин</div>
+        <div class="desc">Сложный функциональный сбор для тонуса и концентрации.</div>
+    </div>
+    <div class="card black">
+        <div class="name">Мята, Корица и Гвоздика</div>
+        <div class="desc">Насыщенный пряный чай с освежающей мятой.</div>
+    </div>
+
+    <!-- ДОБАВКИ -->
+    <div class="addons">
+        <div class="addons-title">🥛 ДОБАВКИ — 20 ₽</div>
+        <p>Сливки • Молоко • Любые сиропы • Подсластитель с пребиотиками</p>
+    </div>
+
+</div>
+
+<a href="https://wa.me" class="btn-order">💬 ЗАКАЗАТЬ В WHATSAPP</a>
+
+</body>
+</html>
