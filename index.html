@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КОФЕ-БАР | Головково 21/1</title>
+    <style>
+        :root { --main-dark: #1a0f0a; --coffee: #d4a373; --bg: #2c1b12; --card: #3d2b1f; --accent: #ff4d4d; --tg: #0088cc; --wa: #25d366; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; background: var(--bg); color: #f5e6d3; line-height: 1.5; padding-bottom: 60px; }
+        
+        header { background: var(--main-dark); padding: 25px 20px; text-align: center; border-bottom: 3px solid var(--coffee); position: sticky; top: 0; z-index: 100; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        h1 { margin: 0; font-size: 26px; letter-spacing: 3px; color: var(--coffee); text-transform: uppercase; }
+        .header-address { font-size: 13px; color: #bcaaa4; margin: 10px 0; font-style: italic; }
+        
+        .contact-box { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
+        .btn-contact { text-decoration: none; color: white; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: bold; display: flex; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .btn-wa { background: var(--wa); }
+        .btn-tg { background: var(--tg); }
+
+        .promo { background: var(--accent); color: white; padding: 12px; font-weight: bold; font-size: 14px; text-align: center; letter-spacing: 1px; box-shadow: inset 0 0 10px rgba(0,0,0,0.2); }
+        
+        .container { max-width: 600px; margin: 0 auto; padding: 15px; }
+        .category { font-size: 20px; font-weight: bold; margin: 40px 0 20px; color: var(--coffee); text-transform: uppercase; border-left: 5px solid var(--accent); padding-left: 15px; background: rgba(255,255,255,0.03); padding-top: 8px; padding-bottom: 8px; }
+
+        .item { background: var(--card); border-radius: 15px; padding: 20px; margin-bottom: 15px; border: 1px solid #4a3728; display: flex; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .item-row { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 10px; }
+        .item-name { font-weight: bold; font-size: 18px; color: #fff; flex: 1; }
+        .item-desc { font-size: 14px; color: #bcaaa4; line-height: 1.5; margin-top: 5px; }
+        .item-price { font-weight: bold; color: var(--coffee); font-size: 18px; white-space: nowrap; background: rgba(0,0,0,0.4); padding: 6px 14px; border-radius: 25px; border: 1px solid var(--coffee); }
+        .weight-badge { font-size: 12px; color: var(--coffee); opacity: 0.9; margin-bottom: 5px; display: inline-block; font-weight: 600; }
+        
+        .sauce-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+        .sauce-card { background: var(--card); padding: 12px; border-radius: 12px; border: 1px solid #4a3728; text-align: center; font-size: 14px; color: #f5e6d3; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+        footer { text-align: center; padding: 60px 20px; background: var(--main-dark); margin-top: 50px; border-top: 2px solid var(--coffee); }
+        .footer-addr { color: var(--coffee); font-weight: bold; font-size: 16px; margin-bottom: 10px; display: block; }
+        .footer-tel { font-size: 22px; color: #fff; font-weight: bold; display: block; margin: 20px 0; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>КОФЕ-БАР</h1>
+    <div class="header-address">📍 МО Наро-фоминский р-он д.Головково д.21\1</div>
+    <div class="contact-box">
+        <a href="https://wa.me" target="_blank" class="btn-contact btn-wa">WhatsApp</a>
+        <a href="https://t.me" target="_blank" class="btn-contact btn-tg">Telegram</a>
+    </div>
+</header>
+
+<div class="promo">🎁 ПОЛГОДА БЕСПЛАТНОЙ СВЯЗИ В ПОДАРОК ПРИ ЗАКАЗЕ!</div>
+
+<div class="container">
+    
+    <!-- РИМСКАЯ ПИЦЦА -->
+    <div class="category">Римская пицца (20х30 см)</div>
+    
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Супермясная Сальса</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 485 гр</span>
+        <div class="item-desc">Настоящий бестселлер для ценителей сытных блюд. Обильная начинка из сочного фарша, копченого бекона и пикантных колбасок, подчеркнутая дерзким мексиканским соусом Сальса.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Дабл Пепперони</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 430 гр</span>
+        <div class="item-desc">Двойная порция классических острых колбасок пепперони. Они аппетитно запекаются в печи, отдавая сок нежной тягучей моцарелле на воздушном тесте.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Чоризо</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 410 гр</span>
+        <div class="item-desc">Испанская страсть в каждом укусе. Островатые колбаски чоризо в сочетании с нашими секретными специями и свежайшим томатным соусом.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Курица Песто</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 470 гр</span>
+        <div class="item-desc">Изысканная гармония: диетическое филе цыпленка и премиальный итальянский соус Песто из свежего базилика, пармезана и кедровых орешков.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Цыпленок Бешамель</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 475 гр</span>
+        <div class="item-desc">Невероятно нежное блюдо. Куриное филе, томленное под знаменитым французским белым соусом Бешамель. Сливочное послевкусие гарантировано!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Карбонара</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 425 гр</span>
+        <div class="item-desc">Легендарный рецепт пасты теперь на хрустящем римском тесте. Подкопченный бекон, нежнейшие сливки, много сыра и ароматные итальянские травы.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Бекон Барбекю</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 455 гр</span>
+        <div class="item-desc">Мужской выбор: много хрустящего бекона, моцарелла и густой соус Барбекю с ароматом костра. Насыщенный и дымный вкус.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Ветчина и Грибы</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 470 гр</span>
+        <div class="item-desc">Классика, которую любят все. Сочная натуральная ветчина и свеженарезанные лесные шампиньоны на тонкой хрустящей корочке.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Груша и Горгонзола</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 455 гр</span>
+        <div class="item-desc">Выбор гурманов. Сладкая, тающая во рту груша идеально сочетается с благородным сыром Горгонзола и грецким орехом. Необычно и очень вкусно!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍕 Маргарита</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 380 гр</span>
+        <div class="item-desc">Золотой стандарт римской пиццы. Минимум ингредиентов — максимум вкуса: сочные томаты, натуральная моцарелла и свежий базилик.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥗 Овощная Веган</span><span class="item-price">700 ₽</span></div>
+        <span class="weight-badge">⚖️ 485 гр</span>
+        <div class="item-desc">Легкость без лишних калорий. Микс из свежих овощей, оливок и пряностей на хрустящей основе. Идеально для тех, кто ценит свежесть.</div>
+    </div>
+
+    <!-- КРУГЛАЯ ПИЦЦА -->
+    <div class="category">Классическая Круглая пицца</div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🧀 Четыре Сыра</span><span class="item-price">450 ₽</span></div>
+        <div class="item-desc">Сырная симфония: Моцарелла, Чеддер, Пармезан и Дорблю сливаются в единый нежный вкус. Настоящее наслаждение!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍄 Ветчина и Грибы (Круглая)</span><span class="item-price">450 ₽</span></div>
+        <div class="item-desc">Традиционная круглая пицца с щедрой порцией начинки из свежих грибов и отборной ветчины под золотистой сырной корочкой.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🔴 Моцарелла</span><span class="item-price">450 ₽</span></div>
+        <div class="item-desc">Классика жанра. Огромное количество расплавленной, тягучей моцареллы на мягком тесте с томатным соусом.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍖 Ветчина и Сыр</span><span class="item-price">450 ₽</span></div>
+        <div class="item-desc">Сытный и понятный вкус, который нравится и детям, и взрослым. Много ветчины и много расплавленного сыра.</div>
+    </div>
+
+    <!-- ДОМАШНЯЯ ВЫПЕЧКА -->
+    <div class="category">Домашняя выпечка</div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥐 Пирожок с картошкой</span><span class="item-price">70 ₽</span></div>
+        <div class="item-desc">Воздушное дрожжевое тесто и нежное картофельное пюре с маслом и обжаренным лучком. Тот самый вкус из детства!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥐 Пирожок с капустой</span><span class="item-price">70 ₽</span></div>
+        <div class="item-desc">Румяный домашний пирожок с сочной, томленой капустой и специями. Идеально под горячий чай.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🌭 Сосисище в тесте</span><span class="item-price">150 ₽</span></div>
+        <div class="item-desc">Наша гордость: гигантская сочная сосиска высшего качества, завернутая в мягкое, слегка сладковатое тесто. Очень сытно!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥟 Чебурек с курицей</span><span class="item-price">60 ₽</span></div>
+        <div class="item-desc">Хрустящее пузырчатое тесто и много нежного куриного фарша с горячим бульоном внутри. Обжарен до золотинки.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥟 Чебурек с бараниной</span><span class="item-price">70 ₽</span></div>
+        <div class="item-desc">Восточный колорит: сочная баранина с пряностями и луком в тонком, хрустящем тесте. Очень насыщенный вкус!</div>
+    </div>
+
+    <!-- ГОРЯЧЕЕ -->
+    <div class="category">Горячие блюда</div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥟 Дамплинги Гёдза</span><span class="item-price">250 ₽</span></div>
+        <div class="item-desc">Изысканные азиатские пельмени с тонким тестом. Выбирайте начинку: курица, свинина или креветка. Идеальная закуска.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥣 Пельмени в бульоне</span><span class="item-price">250 ₽</span></div>
+        <div class="item-desc">Классические мясные пельмени в горячем, наваристом мясном бульоне с добавлением свежего укропа и черного перца. Согревают тело и душу!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥞 Сырнички с вишней</span><span class="item-price">250 ₽</span></div>
+        <div class="item-desc">5 пышных домашних сырников из фермерского творога. Внутри каждого — горячая вишневая начинка. Лучшее дополнение к вашему кофе.</div>
+    </div>
+
+    <!-- ФРИТЮР -->
+    <div class="category">Закуски и Фритюр</div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍤 Креветки в панировке (6 шт)</span><span class="item-price">300 ₽</span></div>
+        <div class="item-desc">Крупные, очищенные королевские креветки в хрустящей японской панировке Панко. Морской деликатес в удобном формате.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍤 Креветки в панировке (12 шт)</span><span class="item-price">600 ₽</span></div>
+        <div class="item-desc">Большая порция хрустящих креветок — для тех, кто знает толк в морепродуктах. Хватит на всю компанию!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍗 Куриные крылышки (10 шт)</span><span class="item-price">400 ₽</span></div>
+        <div class="item-desc">Сочные крылышки, маринованные в специях и обжаренные до идеального хруста. Мясо легко отходит от кости.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍗 Куриные крылышки (15 шт)</span><span class="item-price">600 ₽</span></div>
+        <div class="item-desc">Огромная порция горячих крылышек. Идеально под наш фирменный соус Барбекю или Спайси.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍗 Наггетсы (6 / 12 шт)</span><span class="item-price">150 / 300 ₽</span></div>
+        <div class="item-desc">Нежное белое мясо курицы в классической золотистой панировке. Хрустящие снаружи и мягкие внутри.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🧀 Куриные шарики с сыром</span><span class="item-price">150 / 300 ₽</span></div>
+        <div class="item-desc">6 или 12 аппетитных шариков из рубленого куриного филе, внутри которых прячется расплавленный нежный сыр.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🍟 Картофель Фри (Мал/Сред/Бол)</span><span class="item-price">150 / 400 / 600 ₽</span></div>
+        <div class="item-desc">Золотистая соломка картофеля, обжаренная до идеального хруста и посыпанная морской солью. Всегда горячая и свежая.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🥔 Картофель по-деревенски</span><span class="item-price">150 / 400 / 600 ₽</span></div>
+        <div class="item-desc">Аппетитные дольки картофеля в мундире, запеченные с чесноком, розмарином и набором лесных трав.</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🧀 Сырные палочки (10 шт)</span><span class="item-price">300 ₽</span></div>
+        <div class="item-desc">Тягучий Чеддер или нежная Моцарелла в хрустящем кляре. Растягивайте удовольствие, пока они горячие!</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">🧅 Луковые кольца (10 шт)</span><span class="item-price">300 ₽</span></div>
+        <div class="item-desc">Натуральные кольца репчатого лука в легком, воздушном кляре. Обжарены до золотистого цвета.</div>
+    </div>
+
+    <!-- СОУСЫ -->
+    <div class="category">Фирменные соусы</div>
+    <div class="sauce-grid">
+        <div class="sauce-card">🧀 Сырный</div>
+        <div class="sauce-card">🏝 1000 островов</div>
+        <div class="sauce-card">🔥 Дымный Барбекю</div>
+        <div class="sauce-card">🍒 Лесная брусника</div>
+        <div class="sauce-card">🧄 Чесночный шеф</div>
+        <div class="sauce-card">🏮 Сладкий Терияки</div>
+        <div class="sauce-card">🌶 Острый Спайси</div>
+        <div class="sauce-card">🥚 Майонезный</div>
+        <div class="sauce-card">🍅 Кетчуп / Горчица</div>
+        <div class="sauce-card">🍔 Гамбургер / Карри</div>
+    </div>
+
+</div>
+
+<footer>
+    <span class="footer-addr">📍 д. Головково, д. 21\1</span>
+    <span style="opacity: 0.8;">МО Наро-фоминский р-он</span><br>
+    
+    <a href="tel:89687787896" class="footer-tel">📞 8 (968) 778-78-96</a>
+    
+    <div class="contact-box">
+        <a href="https://wa.me" target="_blank" class="btn-contact btn-wa">WhatsApp</a>
+        <a href="https://t.me" target="_blank" class="btn-contact btn-tg">Telegram</a>
+    </div>
+    
+    <p style="font-size: 11px; margin-top: 30px; opacity: 0.5;">Мы готовим с любовью специально для вас! <br> © 2026 КОФЕ-БАР</p>
+</footer>
+
+</body>
+</html>
